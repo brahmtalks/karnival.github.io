@@ -10,10 +10,8 @@
 	<meta name="vehle" content="vehle.in">
 	
   <script type="text/javascript" src="main.js"></script>
-  <script src="jquery-3.4.1.js" ></script> 
   <link href='style.css' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 
 
@@ -22,15 +20,25 @@
 
   <!-- navbar -->
   <div class="navbar sticky">
-        <a onclick="myFunction1()"><img src="img/logo.png" alt="logo"></a>
-        <div id="header-right">
-            <div id="widenav">
-                <a onclick="myFunction2()">Why Karnival? </a>
-                <a onclick="myFunction3()">Testimonials</a>
-                <a onclick="openForm()" class="myButton" style="color: white;">Contact</a>
-            </div>
-            <button id="mobnav" onclick="openNav();">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+  <a onclick="myFunction1()"><img src="img/logo.png" alt="logo"></a>
+  <div id="header-right">
+    <div id="widenav">
+        <a onclick="myFunction2()">Why karnival? </a>
+        <a onclick="myFunction3()">Testimonials</a>
+        <!-- <a onclick="openForm()" class="myButton" style="color: white;">Contact</a> -->
+        <a onclick="openForm()">
+          <div class="myButton c--anim-btn1">
+            <span class="c-anim-btn1">
+               Contact
+            </span>
+            <span>
+              😇
+            </span>
+           </div>
+        </a>  
+    </div>
+    <button id="mobnav" onclick="openNav();">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
           width="30" height="30"
           viewBox="0 0 30 30"
           style=" fill:#741c7c;"><path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"></path></svg>
@@ -40,7 +48,7 @@
             <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
             <a onclick="myFunction2()">Why Karnival?</a>
             <a onclick="myFunction3()">Testionials</a>
-            <a onclick="openForm()">Contact</a>      
+            <a onclick="openForm()">Contact</a>    
         </div>
 
         <!-- form -->
@@ -66,9 +74,9 @@
               <img src="img/contact1.png" class="getintouch">
 
               <div class="contact_right">
-                <a href="#"><img src="img/facebook.png" class="fb"></a>
-                <a href="#"><img src="img/insta.png" class="insta"></a>
-                <a href="#"><img src="img/linkedin.png" class="linkedin"></a>
+                <a href="#" target="_blank"><img src="img/facebook.png" class="fb"></a>
+                <a href="#" target="_blank"><img src="img/insta.png" class="insta"></a>
+                <a href="https://www.linkedin.com/company/karnivalapp/about/" target="_blank"><img src="img/linkedin.png" class="linkedin"></a>
               </div>
 
               <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
@@ -87,11 +95,23 @@
           <div class="box home_left">
             <h2>Send <span class="bold1">Smart Bills </span> <br> to Customers</h2>
             <p class="p1"><bold>Engage with your customers, <br> boost customer experience and <br> collect invaluable digital profiles </bold></p>
-            <button>Get Karnival <span id="free"> Free</span></button>
+            <a href="#" target="_blank">
+                  <div class="button c--anim-btn2">
+                    <span class="c-anim-btn2">
+                       Get Karnival Free
+                    </span>
+                    <span class="emoji2">
+                      👉
+                    </span>
+                   </div>
+            </a>
             <p class="p2">Start with basic features and upgrade <br> to premium features as you need</p>
           </div>
           <div class="box home_right">
-            <img src="img/creative1.png">
+            <!-- <img src="img/creative1.png"> -->
+            <video id="intro-video" autoplay loop muted playsinline class="video1">
+              <source src="img/main2.mp4" type="video/mp4">
+          </video>
           </div>
         </div>
       </section>
@@ -100,41 +120,43 @@
 	      <div class="page_container grid1">
             <div class="box stat_left">
                 <div class="one">
-                  <div class="c-logo" data-tilt data-tilt-glare="true" data-tilt-max="7">
+                  <div class="c-logo" data-tilt data-tilt-glare="true" data-tilt-max="10">
                     <span>
-                      <img src="img/layer1.png">
+                      <img src="img/layer1111.png">
                     </span>
                   </div>
 
-                  <div class="c-logo" data-tilt data-tilt-glare="true" data-tilt-max="7">
+                  <div class="c-logo" data-tilt data-tilt-glare="true" data-tilt-max="10">
                     <span>
-                     <img src="img/layer3.png" class="right_top">
+                     <img src="img/layer3333.png" class="right_top">
                     </span>
                   </div>
 
                 </div>
 
                 <div class="two">
-                  <div class="c-logo" data-tilt data-tilt-glare="true" data-tilt-max="7">
+                  <div class="c-logo" data-tilt data-tilt-glare="true" data-tilt-max="10">
                     <span>
-                     <img src="img/layer2.png">
+                     <img src="img/layer2222.png">
                     </span>
                   </div>
 
-                  <div class="c-logo" data-tilt data-tilt-glare="true" data-tilt-max="7">
+                  <div class="c-logo" data-tilt data-tilt-glare="true" data-tilt-max="10">
                     <span>
-                      <img src="img/layer4.png" class="right_bottom">
+                      <img src="img/layer4444.png" class="right_bottom">
                     </span>
                   </div>
 
-                </div>
+              </div>
             </div>
             <div class="box stat_right">
                 <h2>Delivering <br> <span id="smiles"> Smiles</span> to <br> Customer <br> Since 2015</h2>
             </div>
 	      </div>
       </section>
-	    
+      
+
+
 	    <section class="page3" id="features">
 	      <div class="page_container grid1">
           <div class="box feature_left">
@@ -144,9 +166,24 @@
           
           <div class="box feature_right" id="feature_right">
             <div class="carousel" data-flickity='{ "freeScroll": true, "pageDots" : false }'>
-              <div class="carousel-cell"><img src="img/feature1.png" alt="datrstax"></div>
-              <div class="carousel-cell"><img src="img/feature2.png" alt="datrstax"></div>
-              <div class="carousel-cell"><img src="img/feature3.png" alt="datrstax"></div>
+              <div class="carousel-cell">
+                <!-- <img src="img/feature1.png" alt="datrstax"> -->
+                <video id="intro-video" autoplay loop muted playsinline class="video2">
+                  <source src="img/redred.mp4" type="video/mp4">
+              </video>
+              </div>
+              <div class="carousel-cell">
+                <!-- <img src="img/feature2.png" alt="datrstax"> -->
+                <video id="intro-video" autoplay loop muted playsinline class="video2">
+                  <source src="img/greengreen.mp4" type="video/mp4">
+              </video>
+              </div>
+              <div class="carousel-cell">
+                <!-- <img src="img/feature3.png" alt="datrstax"> -->
+                <video id="intro-video" autoplay loop muted playsinline class="video2">
+                  <source src="img/blueblue.mp4" type="video/mp4">
+              </video>
+              </div>
             </div>
           </div>
   	    </div>
@@ -155,7 +192,10 @@
       <section class="page4">
         <div class="page_container grid1">
           <div class="box promotions_left">
-            <img src="img/feature4.png">
+            <!-- <img src="img/feature4.png"> -->
+            <video id="intro-video" autoplay muted playsinline class="video3">
+              <source src="img/itsball.mp4" type="video/mp4">
+          </video>
           </div>
           <div class="box promotions_right">
             <h2>Promotions and <br> Recommendations</h2>          
@@ -177,7 +217,7 @@
                   <div class="review">
                       <h3>VP of Engineering, exp Reality</h3>
                       <!-- <h4>Development and QA Services for Real Estate Company</h4> -->
-                      <p>"Karnival has given amazing solution. Indium improved the rigor of our testing processes and has resolved hundereds of bugs over the years. "</p>
+                      <p>"Karnival has given amazing solution. Indium improved and has resolved hundereds of bugs over the years. "</p>
                   </div>
               </div>
               <div class="carousel-cell_r">
@@ -191,7 +231,7 @@
               <div class="carousel-cell_r">
                 <img src="img/testimonial.png" alt="review_one">
                   <div class="review">
-                      <h3>Head of Data Management Team, Mobile Engagement Company</h3>
+                      <h3>Head of Data Management Team</h3>
                       <!-- <h4>Data Analytics Service for Mobile Engagement Company</h4> -->
                       <p>" Indium improved the rigor of our testing processes and has resolved hundereds of bugs over the years. "</p>
                   </div>
@@ -214,10 +254,23 @@
             <div class="box paperless ">
               <div class="paperless_left">
                 <h2>Go <span id="paperless"> Paperless, </span> <br> or Go to Mars</h2>
-                <button>Join Us</button>
+                <!-- <!-- <button>Join Us</button> --> 
+                <a href="#" target="_blank">
+                  <div class="button2 c--anim-btn3">
+                    <span class="c-anim-btn3">
+                       Join Us
+                    </span>
+                    <span>
+                      😎
+                    </span>
+                  </div>
+                </a>
               </div>
               <div class="paperless_right">
-                <img src="img/paperless.png">
+                <!-- <img src="img/paperless.png"> -->
+                <video id="intro-video" autoplay loop muted playsinline class="video4">
+                  <source src="img/earth.mp4" type="video/mp4">
+              </video>
               </div>
             </div>
             <div class="box partners">
@@ -238,7 +291,7 @@
         <div class="page_container grid3">
             <div class="box">
               <div class="cartoon">
-                <img src="img/cartoon1.png">
+                <img src="img/cartoon11.png">
               </div>
               <div class="contact_box">
                   <p class="mail">info@karnival.co</p>
@@ -247,7 +300,7 @@
                   <div class="social-icons">        
                     <a href="#" target="_blank"><img src="img/facebook.png" class="fb"></a>
                     <a href="#" target="_blank"><img src="img/insta.png" class="insta"></a>
-                    <a href="#" target="_blank"><img src="img/linkedin.png" class="linkedin"></a>
+                    <a href="https://www.linkedin.com/company/karnivalapp/about/" target="_blank"><img src="img/linkedin.png" class="linkedin"></a>
                   </div>
               </div>
             </div>
@@ -264,11 +317,13 @@
    });
 		
 	</script>
-  
-    <script >
-      $('.js-tilt').tilt({
-          scale: 1.2
-      })
-    </script>
+  <script src="jquery-3.4.1.js" ></script> <!-- Load jQuery first -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="tilt.jquery.js"></script> <!-- Load Tilt.js library -->
+  <script >
+    $('.js-tilt').tilt({
+        scale: 1.2
+    })
+  </script>
 </body>
 </html>

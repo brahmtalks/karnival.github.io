@@ -124,7 +124,7 @@ function onePageScroll(element, options) {
   	}
     
   	_mouseWheelHandler = function(event) {
-  		event.preventDefault();
+  		// event.preventDefault();
   		var delta = event.wheelDelta || -event.detail;
   		if (!_hasClass(body, "disabled-onepage-scroll")) _init_scroll(event, delta);
   	}
@@ -188,7 +188,7 @@ function onePageScroll(element, options) {
   	function touchmove(event) {
   		var touches = event.touches;
   		if (touches && touches.length) {
-  		  event.preventDefault();
+  		//   event.preventDefault();
   			var deltaX = startX - touches[0].pageX;
   			var deltaY = startY - touches[0].pageY;
   
@@ -529,7 +529,7 @@ function onePageScroll(element, options) {
 // navbar
 
 function openNav() {
-  document.getElementById("drawer").style.width = "550px";
+  document.getElementById("drawer").style.width = "250px";
 }
 
 function closeNav() {
