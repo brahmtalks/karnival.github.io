@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ambharii - Next-Generation Data and IT Consulting,Solutions & Services</title>
+  <meta name="description"
+    content="Empowering businesses with our cutting edge  Next-gen Technology Consulting and Solution Services that is easily and rapidly scalable, custom-built and secure. Reach us for demo of our use cases.">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+
+<body>
+  <div class="navbar sticky" style="display: none;">
+    <!-- <img src="img/ambhariilabs.png" alt="logo"> -->
+    <h3>Ambharii Labs</h3>
+    <div id="header-right">
+      <div id="widenav">
+
+        <a onclick="myFunction2()">services</a>
+        <a onclick="myFunction4()">projects</a>
+        <a>blog</a>
+        <a onclick="openForm()" class="myButton" style="color: white;">Contact</a>
+      </div>
+      <button id="mobnav" onclick="openNav();">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 30 30"
+          style=" fill:#000000;">
+          <path
+            d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z">
+          </path>
+        </svg>
+      </button>
+    </div>
+    <div id="drawer">
+      <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+      <a onclick="myFunction1()">About</a>
+      <a onclick="myFunction2()">Services</a>
+      <a onclick="myFunction3()">Industries</a>
+      <a onclick="myFunction4()">Projects</a>
+      <a onclick="myFunction5()">Reviews</a>
+      <a>blogs</a>
+      <a onclick="myFunction6()">Team</a>
+      <a onclick="openForm()">Contact</a>
+    </div>
+
+    <div class="form-popup" id="myForm">
+      <form action="inc/sendemail.php" class="contact-us-form form-validation form-container" auto-complete="off"
+        method="POST">
+        <!-- <form action="/action_page.php" class="form-container"> -->
+        <a onclick="closeForm()">&times;</a>
+        <h1>Contact</h1>
+
+        <!-- <label for="email"><b>Name</b></label> -->
+        <input value="" id="name" type="text" class="inputs" placeholder="Name*" name="email" required>
+
+        <!-- <label for="psw"><b>Email</b></label> -->
+        <input value="" id="email" type="email" class="inputs" placeholder="Email* " name="psw" required>
+
+        <!-- <label for="psw"><b>Number</b></label> -->
+        <input value="" id="number" type="text" class="inputs" placeholder="Number*" name="psw" required>
+
+        <button type="submit" value="SEND MESSAGE" class="btn">Submit</button>
+
+        <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+      </form>
+    </div>
+  </div>
+  <main class="grid">
+    <div class="box box1">
+      <img src="img/boldlogo.png" alt="ambharii_logo" style="width:14%;">
+    </div>
+    <div class="box box2">
+      <img src="img/99.png" alt="home_creative" style="margin-top:3%;">
+    </div>
+    <div class="box box3" id="content">
+      <h2> Our Story </h2>
+      <p>The best minds in technology and development have come together to help businesses grow with out of the box
+        service & experience, with a unique approach that is connection centric, innovation focused and positivity
+        driven.</p>
+      <span><a href="http://bit.ly/36vAYzY" target="_blank"><img src="img/linkedin.png" alt="linkedin_logo"></a>
+        <a href="https://api.whatsapp.com/send?phone=16124548418&text=&source=&data=" target="_blank"><img
+            src="img/whatsapp.png" alt="whatsapp_logo"></a>
+        <a href="http://bit.ly/2MZxiPh" target="_blank"><img src="img/facebook.png" alt="facebook_logo"></a></span>
+    </div>
+    <div class="box box4">
+      <img src="img/round.png" alt="about_creative" style="width:75%;">
+    </div>
+    <div class="box box5" id="box5">
+      <h2>Pandora's Box</h2>
+    </div>
+    <div class="box box6">
+      <!-- <img src="img/service11.png" alt="Show/Hide Image" id="myImg1">
+      <img src="img/service22.png" alt="Show/Hide Image" id="myImg2">
+      <img src="img/analytics.png" alt="Show/Hide Image" id="myImg3">
+      <img src="img/service44.png" alt="Show/Hide Image" id="myImg4"> -->
+      <img src="img/888-min.png" alt="services_creative" id="myImg" style="width:80%;margin-top:-10%;">
+    </div>
+    <div class="box box7" onclick="serviceDance(0, false)">
+      <div class="one">
+        <div class="card">
+          <span class="hvr-bob" id="btn1"><img src="img/service11.png" alt="web_development" onclick="serviceDance(1)">
+          </span>
+          <span class="hvr-bob" id="btn3"><img src="img/service22.png" class="img1" alt="app_development"
+              onclick="serviceDance(2)"> </span>
+        </div>
+      </div>
+      <div class="two">
+        <span class="hvr-bob" id="btn5"><img src="img/service33.png" alt="consulting" onclick="serviceDance(3)"> </span>
+        <span class="hvr-bob" id="btn7"><img src="img/service44.png" class="img2" alt="data_science"
+            onclick="serviceDance(4)"> </span>
+      </div>
+    </div>
+    <div class="box" id="industries">
+      <h2>Other Chapters</h2>
+    </div>
+    <div class="box box9">
+      <div class="hover01">
+        <a href="#" target="_blank">
+          <figure><img src="img/5.png" alt="ambharii_health"></figure>
+        </a>
+      </div>
+      <div>
+        <h3>Ambharii Health</h3>
+        <p>With a vision of creating a new-age digital healthcare platform and educating the differently abled masses
+          with social skills, health matey is committed to bring smiles to the faces of our planet.</p>
+      </div>
+    </div>
+    <div class="box box10 hover01">
+      <a href="#" target="_blank">
+        <figure><img src="img/6.png" alt="ambharii_embedded_systems"></figure>
+      </a>
+      <h3>Ambharii Embedded <br>Systems</h3>
+      <p>From common household appliances to complex industrial automation tools, we infuse embedded solutions to almost
+        every system, making your tasks effortless, like never before. </p>
+    </div>
+    <div class="box box11 hover01">
+      <a href="#" target="_blank">
+        <figure><img src="img/7.png" alt="ambharii_retail"></figure>
+      </a>
+      <h3>Ambharii Retail</h3>
+      <p>A revolutionary idea of digitizing the retail space by planting kiosks to make the sector more lively and
+        customer interactive. With FittedUSA, now every product is on your fingertips.</p>
+    </div>
+    <div class="box box12" id="box12">
+      <h2>Workfolio</h2>
+    </div>
+    <div class="box box13 tiles" id="box13">
+      <ul class="hs no-scrollbar">
+        <a href="#popup1" class="tile">
+          <!-- <li class="item"> -->
+          <img src="img/moneyverbs.png" alt="project2" class="project1">
+          <!-- </li> -->
+          <div class="details">
+            <span class="title">MoneyVerbs</span>
+            <!-- <span class="info">Quisqueee vel felis leccccctus donec vittttae dapibus magna</span> -->
+          </div>
+        </a>
+        <div id="popup1" class="overlay">
+          <div class="popup">
+            <h2>MoneyVerbs Project</h2>
+            <a class="close" href="#box12">&times;</a>
+            <div class="content">
+              <p><strong>Website</strong> : <a href="http://bit.ly/36LhaZs" target="_blank"> http://www.moneyverbs.com
+                </a></p>
+              <p>This is a next-gen software project in collaboration with our partner NCXT. We have been the key
+                technology drivers in Solution, Design, Architecture and Development from scratch. Our Architecture and
+                Development teams have been involved right from MVP of the product and moving on to the different phases
+                of Applicatuon development. </p>
+              <p>We have been solutioning and designing using Agile and NextGen software methodologies. </p>
+              <p>MoneyVerbs is an online learning platform that seeks to empower people like you, when it comes to your
+                finances! By offering interactive courses, we help you put action into your money to make it feel good!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#popup2" class="tile">
+          <!-- <li class="item"> -->
+          <img src="img/comingsoon.png" alt="project2" class="project2">
+          <!-- </li> -->
+          <div class="details">
+            <span class="title">Heathcare</span>
+            <!-- <span class="info">Quisqueee vel felis leccccctus donec vittttae dapibus magna</span> -->
+          </div>
+        </a>
+        <div id="popup2" class="overlay">
+          <div class="popup">
+            <h2>Healthcare Project</h2>
+            <a class="close" href="#box12">&times;</a>
+            <div class="content">
+              <p>Watch out for this space, Coming Soon</p>
+              <p>This is a NextGen software project for healthcare services. Our Architecture and UI/UX teams have been
+                involved in MVP phase for this product. We are developing a next-generation Mobile platform to transform
+                the Customer Experience (Patients, Doctors, Nurses, and Providers) for increased Patient Engagement and
+                Integrated Care (Value-based care). More details coming really soon...</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#popup3" class="tile">
+          <!-- <li class="item"> -->
+          <img src="img/compass.png" alt="project3" class="project3">
+          <!-- </li> -->
+          <div class="details">
+            <span class="title">Lead Generation Project</span>
+            <!-- <span class="info">Quisqueee vel felis leccccctus donec vittttae dapibus magna</span> -->
+          </div>
+        </a>
+        <div id="popup3" class="overlay">
+          <div class="popup">
+            <h2>Lead Generation Project</h2>
+            <a class="close" href="#box12">&times;</a>
+            <div class="content">
+              <p>A research project that was implemented in collaboration with Compass, Wayzata High School, Plymouth,
+                MN.</p>
+              <p>Project presented awareness of tools and technologies for enhancing lead generation, product and
+                services marketing.</p>
+              <p>Generated tools to grow business for small and medium sized companies.</p>
+              <p>Evolved Lead generation capability with market trends for latest product and services offerings.</p>
+              <p>Defined a path for taking the Lead generation capability Globally with recommendations and
+                deliverables.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--  <a href="#popup4" class="tile">
+         
+            <img src="img/moneyverbs.png" alt="project4">
+         
+          <div class="details">
+            <span class="title">brahm Ipsum Dolor</span>
+            
+          </div>
+        </a>
+        <div id="popup4" class="overlay">
+          <div class="popup">
+            <h2>App Development</h2>
+            <a class="close" href="#box12">&times;</a>
+            <div class="content">
+              popup 4 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+          </div>
+        </div>
+
+        <a href="#popup5" class="tile">
+         
+            <img src="img/moneyverbs.png" alt="project5">
+          
+          <div class="details">
+            <span class="title">ibadat Ipsum Dolors</span>
+            
+          </div>
+        </a>
+        <div id="popup5" class="overlay">
+          <div class="popup">
+            <h2>Apppp Development</h2>
+            <a class="close" href="#box12">&times;</a>
+            <div class="content">
+               popup 5 Loremmmmm Ipsum is simply dummy text of the printing and typesetting industry. 
+            </div>
+          </div>
+        </div>
+
+        <a href="#popup6" class="tile">
+      
+            <img src="img/moneyverbs.png" alt="project6">
+   
+          <div class="details">
+            <span class="title">kanika Ipsum Dolors</span>
+           
+          </div>
+        </a>
+        <div id="popup6" class="overlay">
+          <div class="popup">
+            <h2>Apppp Dddevelopment</h2>
+            <a class="close" href="#box12">&times;</a>
+            <div class="content">
+              popup 6 Loremmmmm Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+          </div>
+        </div> -->
+
+      </ul>
+      <ul class="hs1 no-scrollbar">
+
+        <a href="#popup7" class="tile">
+          <!-- <li class="item"> -->
+          <img src="img/healthmatey.png" alt="project7" class="project7">
+          <!-- </li> -->
+          <div class="details">
+            <span class="title">HealthMatey - NonProfitable Organization</span>
+            <!-- <span class="info">Quisqueee vel felis leccccctus donec vittttae dapibus magna</span> -->
+          </div>
+        </a>
+        <div id="popup7" class="overlay">
+          <div class="popup">
+            <h2>HealthMatey Project</h2>
+            <a class="close" href="#box12">&times;</a>
+            <div class="content" style="text-align: justify;">
+              <p style="text-align: center;"> <strong>Website</strong>: <a
+                  href="https://healthmatey.com/">https://healthmatey.com/</a>
+                <p>There are several victims of the mental handicap throughout the community and we can promote
+                  inclusion through social skills services to students with communication difficulties</p>
+                <ul>
+                  <li>Empowering Children with learning disabilities, Social, and communication challenges and build an
+                    inclusive and economic centric society for the Human kind. </li>
+                  <li>Provide inclusive environment for students with learning / speech disabilities. </li>
+                  <li>Re emphasize Importance of social skills (especially for students who lack them) and how much help
+                    is required from the community. </li>
+                  <li>Bridge the gap and Involve motivated/interested students to help those with disabilities.</li>
+                </ul>
+                <p>Your support directly impacts the lives of our students. Social Skills is essential for students with
+                  social challenges, No diagnosis is required. We don’t just teach social skills — we teach social
+                  thinking and understanding so that children can apply what they learn wherever they go. </p>
+
+            </div>
+          </div>
+        </div>
+
+        <a href="#popup8" class="tile">
+          <img src="img/fittedusa.png" alt="project8" class="project8">
+          <div class="details">
+            <span class="title">Fitted USA - Retail Product</span>
+            <!-- <span class="info">Quisqueee vel felis leccccctus donec vittttae dapibus magna</span> -->
+          </div>
+        </a>
+        <div id="popup8" class="overlay">
+          <div class="popup">
+            <h2>FittedUSA Project</h2>
+            <a class="close" href="#box12">&times;</a>
+            <div class="content">
+              <p>A next-generation IOT, AR/VR RetailTech platform to transform the Customer Experience by providing
+                Virtual Trial rooms and enabling Retailers, Fashion & Apparel industry with real data insights to truly
+                empower the overall shopping experience and to enable customers to make purchase decisions faster and
+                easier.</p>
+              <p>US Market Research for viability of Virtual Trial Rooms (Kiosks), Digitization Services of an ongoing
+                RetailTech research project to study the Consumers and Market behavior on shopping experience and
+                understand the true value that Digitization would bring to the Fashion and Apparel Industry </p>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- <a href="#popup9" class="tile">
+            <img src="img/moneyverbs.png" alt="project9">
+          <div class="details">
+            <span class="title">kanika Ipsum Dolors</span>
+       
+          </div>
+        </a>
+        <div id="popup9" class="overlay">
+          <div class="popup">
+            <h2>Apppp Dddevelopment</h2>
+            <a class="close" href="#box12">&times;</a>
+            <div class="content">
+              popup 8 Loremmmmm Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+          </div>
+        </div>
+
+        <a href="#popup10" class="tile">
+            <img src="img/moneyverbs.png" alt="project10">
+          <div class="details">
+      
+          </div>
+        </a>
+        <div id="popup10" class="overlay">
+          <div class="popup">
+            <h2>Apppp Dddevelopment</h2>
+            <a class="close" href="#box12">&times;</a>
+            <div class="content">
+              popup 8 Loremmmmm Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+          </div>
+        </div>
+
+        <a href="#popup11" class="tile">
+            <img src="img/moneyverbs.png" alt="project11">
+          <div class="details">
+            <span class="title">kanika Ipsum Dolors</span>
+           
+          </div>
+        </a>
+        <div id="popup11" class="overlay">
+          <div class="popup">
+            <h2>Apppp Dddevelopment</h2>
+            <a class="close" href="#box12">&times;</a>
+            <div class="content">
+              popup 8 Loremmmmm Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+          </div>
+        </div>
+
+        <a href="#popup12" class="tile">
+            <img src="img/moneyverbs.png" alt="project12">
+          <div class="details">
+            <span class="title">kanika Ipsum Dolors</span>
+   
+          </div>
+        </a>
+        <div id="popup12" class="overlay">
+          <div class="popup">
+            <h2>Apppp Dddevelopment</h2>
+            <a class="close" href="#box12">&times;</a>
+            <div class="content">
+              popup 8 Loremmmmm Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+          </div>
+        </div> -->
+      </ul>
+    </div>
+
+    <div class="box box14" id="box14">
+      <div class="slickkk">
+        <div>
+          <li class="items"><img src="img/client1.png" alt="datrstax"></li>
+        </div>
+        <div>
+          <li class="items"><img src="img/client2.png" alt="IBM"></li>
+        </div>
+        <div>
+          <li class="items"><img src="img/client3.png" alt="MAPR"></li>
+        </div>
+        <div>
+          <li class="items"><img src="img/client4.png" alt="Hortonworks"></li>
+        </div>
+        <div>
+          <li class="items"><img src="img/client5.png" alt="cloudera"></li>
+        </div>
+        <div>
+          <li class="items"><img src="img/client1.png" alt="datrstax"></li>
+        </div>
+      </div>
+
+    </div>
+    <div class="box box15">
+      <h2></h2>
+    </div>
+
+    <div class="box16 box" id="box16" style="display:none;">
+      <ul class="hs4 no-scrollbar">
+        <li class="item ">
+          <img src="img/dumy1.png" alt="review_one">
+          <div class="review">
+            <h3>VP of Engineering, exp Reality</h3>
+            <h4>Development and QA Services for Real Estate Company</h4>
+            <p>" Indium improved the rigor of our testing processes and has resolved hundereds of bugs over the years. "
+            </p>
+          </div>
+        </li>
+        <li class="item">
+          <img src="img/dumy1.png" alt="review_one">
+          <div class="review">
+            <h3>Co-founder, Renewable Energy</h3>
+            <h4>Artificial Intelligence Support for Renewable Energy Tech Company </h4>
+            <p>" They work well with our internal team and are dedicated to our success "</p>
+          </div>
+        </li>
+        <li class="item">
+          <img src="img/dumy1.png" alt="review_one">
+          <div class="review">
+            <h3>Head of Data Management Team, Mobile Engagement Company</h3>
+            <h4>Data Analytics Service for Mobile Engagement Company</h4>
+            <p>" Their adaptability and Technical knowledge are exceptional "</p>
+          </div>
+        </li>
+        <li class="item">
+          <img src="img/dumy1.png" alt="review_one">
+          <div class="review">
+            <h3>Senior Producer, Atari</h3>
+            <h4>QA Services for Atari Mobile Games</h4>
+            <p>" Indium Software's QA process and methodology gives me confidence that the game is the best quality it
+              can be "</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="box17 box reverse" style="display:none;">
+      <p>Your <br> Treasured<br> Words<br> That <br>Keep <br>Us<br> Going</p>
+    </div>
+    <div class="box box18">
+      <h2>Our Journal</h2>
+    </div>
+    <div class="box box19">
+      <div class="blog1 hovereffect bloga">
+        <a target="_blank" href="https://www.linkedin.com/pulse/ai-driven-analytics-anil-prasad/"><img src="img/2.jpg" alt="blog1_creative"></a>
+        <div class="overlay"></div>
+        <p>AI-Driven Analytics</p>
+      </div>
+    </div>
+
+    <div class="box box20">
+      <div class="blog2 bloga">
+        <a target="_blank" href="https://www.linkedin.com/pulse/workloads-cloud-anil-prasad/"><img src="img/22.jpg" alt="blog2_creative"></a>
+        <div class="overlay"></div>
+        <p>Workloads on Cloud</p>
+      </div>
+    </div>
+    <!--  <div class="box box20">
+      <div class="blog2">
+          <img src="img/22.png" alt="blog2_creative">
+      </div>
+  </div> -->
+    <div class="box box21" id="team">
+      <h2>faces-in-Charge</h2>
+    </div>
+    <div class="box box22" id="box22">
+      <!-- aakash -->
+      <div class="slickk">
+
+        <div class="item">
+          <a href="#"><img src="img/anil.jpg" alt="anil_arora"></a>
+          <div class="team1 team">
+            <h3>Anil Prasad</h3>
+            <h4> Founder and CEO</h4>
+            <p>Technologist by heart. A Strategic and Tactical Visionary full of Compassion and Empathy. MS in Computer
+              Science and loves family, cricket and friends.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <a href="#"><img src="img/ganesh.jpg" alt="riya_aurora"></a>
+          <div class="team2 team">
+            <h3>Ganesh Hegde</h3>
+            <h4>CTO, Software Sevices</h4>
+            <p>A passionate Technologist with exemplary reasoning capabilities. A product of IIM, Bangalore who loves
+              family, cricket and friends.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <a href="#"><img src="img/Sharad1.jpg" alt="kanika_garg"></a>
+          <div class="team3 team">
+            <h3>Sharad Nalawade</h3>
+            <h4>President, Digital Systems and Technology</h4>
+            <p> Headed enterprise-architecture, led digital transformation using emerging technologies. Also, a visiting
+              professor at IIM Lucknow and IIM Indore</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <a href="#" target="_blank"><img src="img/dumy.png" alt="brahm_jot"></a>
+          <div class="team6 team">
+            <h3>Swarup </h3>
+            <h4>CTO, Embedded Systems</h4>
+            <p> Technology and Delivery leader with decades of experience in developing Embedded products and
+              development, and home at testing services.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <a href="#"><img src="img/dumy.png" alt="brahm_jot"></a>
+          <div class="team5 team">
+            <h3>Geoffrey Costigan</h3>
+            <h4>Enterprise Architecture</h4>
+            <p>Disruptor, turnaround leader, and a brilliant strategist with a diverse technical background. A strong
+              leader with a deep sense of vision.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <a href="#"><img src="img/david.jpg" alt="brahm_jot"></a>
+          <div class="team4 team">
+            <h3>David McDonell</h3>
+            <h4>Sales and Partner Relations</h4>
+            <p> Focused on SmartTech and IntelligentData to accelerate Knowledge-powered applications and digital Ux
+              within business enterprises.</p>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+
+
+    </div>
+    <div class="box box26">
+      <div class="contact">
+        <div class="icons">
+          <span>
+            <a href="http://bit.ly/36vAYzY" target="_blank"><img src="img/linkedin.png" alt="linkedin_logo"></a>
+            <a href="https://api.whatsapp.com/send?phone=16124548418&text=&source=&data=" target="_blank"><img
+                src="img/whatsapp.png" alt="whatsapp_logo"></a>
+            <a href="http://bit.ly/2MZxiPh" target="_blank"><img src="img/facebook.png" alt="facebook_logo"></a>
+          </span>
+          <a href="mailto:services@ambharii.com?subject=Jobs%20at%20Ambharii
+              &body=Do%20attach%20your%20resume" target="_blank"><button>Apply Now</button></a>
+        </div>
+        <div class="info">
+          <p class="mail">services@ambharii.com</p>
+          <p class="add"><strong>Office Address: 17612 62ND CT N, Maple Grove, MN 55311</strong></p>
+          <span class="number">Contact: +1-612-454-8418</span>
+          <p class="terms">Privacy | Terms And Conditions</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
