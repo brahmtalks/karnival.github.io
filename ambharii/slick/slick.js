@@ -14,6 +14,11 @@
   Issues: http://github.com/kenwheeler/slick/issues
 
  */
+
+
+document.cookie = 'same-site-cookie=foo; SameSite=Lax';
+document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
+
 /* global window, document, define, jQuery, setInterval, clearInterval */
 ;(function(factory) {
     'use strict';
