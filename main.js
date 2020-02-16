@@ -188,7 +188,7 @@ function onePageScroll(element, options) {
   	function touchmove(event) {
   		var touches = event.touches;
   		if (touches && touches.length) {
-  		  event.preventDefault();
+  		//   event.preventDefault();
   			var deltaX = startX - touches[0].pageX;
   			var deltaY = startY - touches[0].pageY;
   
@@ -567,10 +567,10 @@ function closeForm() {
 // end form
 
 
-const tilt = $('.js-tilt').tilt();
-tilt.on('change', callback);  // parameters: event, transforms
-tilt.on('tilt.mouseleave', callback); // parameters: event
-tilt.on('tilt.mouseenter', callback); // parameters: event
+// const tilt = $('.js-tilt').tilt();
+// tilt.on('change', callback);  // parameters: event, transforms
+// tilt.on('tilt.mouseleave', callback); // parameters: event
+// tilt.on('tilt.mouseenter', callback); // parameters: event
 
 
 

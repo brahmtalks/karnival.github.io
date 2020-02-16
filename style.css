@@ -634,9 +634,9 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   margin-bottom: 8%;
 }
 
-.home_right img {
-  width: 60%;
-  margin-top: 30%;
+.home_right video {
+  width: 77%;
+  margin-top: 20%;
   margin-left: -12%;
  
 }
