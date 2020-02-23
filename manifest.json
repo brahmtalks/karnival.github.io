@@ -1,0 +1,17 @@
+{
+    "name": "Karnival",
+    "short_name": "Karnival",
+    "icons": [{
+      "src": "/images/appicon128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      }, {
+        "src": "/images/appicon144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      }],
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": "#212121"
+  }
